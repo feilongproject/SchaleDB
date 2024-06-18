@@ -3355,7 +3355,7 @@ $.when($.ready, loadPromise).then(function() {
     }
 
     //gtag settings
-    gtag('config', 'G-XQEWDXR13H', {
+    gtag('config', 'G-NGSSET33J8', {
         'custom_map': {
             'dimension1': 'user_language' 
         },

@@ -8,6 +8,7 @@
     <meta name="apple-mobile-web-app-title" content="Schale DB">
     <meta name="application-name" content="Schale DB">
     <meta name="theme-color" content="#212529">
+    <meta name="baidu-site-verification" content="codeva-snozGwZxFt" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
@@ -23,17 +24,17 @@
     <link href="./lib/fontawesome-free-6.1.1/css/solid.min.css" rel="stylesheet">
     <link href="./lib/fontawesome-free-6.1.1/css/regular.min.css" rel="stylesheet">
     <link href="./lib/fontawesome-free-6.1.1/css/brands.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+Thai:wght@400;500;700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <!-- <link rel="preconnect" href="https://fonts.font.im">
+    <link rel="preconnect" href="https://fonts.gstatic.font.im" crossorigin>
+    <link href="https://fonts.font.im/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+Thai:wght@400;500;700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">  -->
     <link href="css/main.css?v=285" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQEWDXR13H"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGSSET33J8"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-XQEWDXR13H');
+        gtag('config', 'G-NGSSET33J8');
     </script>
 </head>
 <body>
@@ -45,7 +46,7 @@
             </div>
         </div>
         <div id="loading-skipmsg" class="d-flex justify-content-center mt-2 text-center text-light" style="display:none!important;">
-            <p>Stuck loading? Click <a href="javascript:$('#loading-cover').fadeOut();" class="text-emphasis">here</a> to try and continue anyway.<br>If there is an error in your browser console (Press F12), please report it to @lonqie on Discord or open an issue on <a href="https://github.com/SchaleDB/SchaleDB">GitHub</a>.</p>
+            <p>Stuck loading? Click <a href="javascript:$('#loading-cover').fadeOut();" class="text-emphasis">here</a> to try and continue anyway.<br>If there is an error in your browser console (Press F12), please report it to @lonqie on Discord or open an issue on <a href="https://github.com/feilongproject/SchaleDB">GitHub</a>.</p>
         </div>
     </div>
     <div id="ba-background" style="position: fixed;">
@@ -240,7 +241,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body m-3 p-0">
-                    <p>Please check out the following resources created by the Blue Archive community.<br>This list is maintained by Causew (Discord: @causew).</p>
+                    <p>Please check out the following resources created by the Blue Archive community.<br>This list is maintained by Causew#5130.</p>
                     <div id="modal-links-content" class="px-2"></div>
                 </div>
             </div>
@@ -251,6 +252,32 @@
     const cache_ver = 285;
     document.getElementById('loading-spinner').style.display = null;
     window.setTimeout(x => {document.getElementById('loading-skipmsg').style.display = null;}, 10000);
+    fetch(`./cache_ver`, { method: "GET", cache: "no-cache" }).then((res) => res.text()).then(text => {
+        console.log(cache_ver, text);
+        if (cache_ver != text) location.reload();
+    });
+</script>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "katm5teaps");
 </script>
 <script src="js/common.min.js?v=285"></script>
+<style>
+    body {
+        font-family: 'Blueaka' !important;
+    }
+    @font-face {
+        font-family: Blueaka;
+        font-weight: 400;
+        src: url(lib/font/Blueaka.otf) format("opentype");
+    }
+    @font-face {
+        font-family: Blueaka_Bold;
+        font-weight: 700;
+        src: url(lib/font/Blueaka_Bold.otf) format("opentype");
+    }
+</style>
 </html>
